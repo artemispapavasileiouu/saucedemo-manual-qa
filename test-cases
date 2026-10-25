@@ -6,7 +6,7 @@ Application: https://www.saucedemo.com/
 Document Type: Test Cases 
 Testing Type: Manual Functional Testing 
 Author: Artemis Papavasileiou 
-Status: Execution Completed - Review Pending
+Status: Execution Completed 
 
 2. Test Data
 The following publicly provided demo credentials will be used:
@@ -408,7 +408,7 @@ Test Steps:
 1. Observe the confirmation page.
 2. Verify the confirmation message.
 3. Verify that a Back Home button is available.
-4. Click Back Home
+4. Click Back Home.
 
 Expected Result:
 The confirmation page should communicate successful completion and provide a way to return to the Products page.
