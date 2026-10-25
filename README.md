@@ -34,9 +34,9 @@ Test Deliverables
 
 | Deliverable                                 | Description                                                       |
 |---------------------------------------------|-------------------------------------------------------------------|
-| [Test Plan](test-plan/test-plan.md)         | Testing scope, objectives, approach, and limitations              |
-| [Test Cases](test-cases/test-cases.md)      | 22 manual functional test cases with execution results            |
-| [Bug Reports](bug-reports/bug-reports.md)   | Documentation of two observations requiring further investigation |
+| [Test Plan](saucedemo-manual-qa/test-plan.md)         | Testing scope, objectives, approach, and limitations              |
+| [Test Cases](saucedemo-manual-qa/test-cases.md)      | 22 manual functional test cases with execution results            |
+| [Bug Reports](saucedemo-manual-qa/bug-reports.md)   | Documentation of two observations requiring further investigation |
 
 Test Execution Summary
 
