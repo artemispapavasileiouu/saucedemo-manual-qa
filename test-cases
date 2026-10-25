@@ -54,9 +54,9 @@ Test Steps:
 Expected Result:
 The login should be rejected, and an appropriate error message should be displayed.
 
-Actual Result: To be recorded during execution.
+Actual Result: Login was unsuccessful. The error message appeared and the user was not redirected to the Products page.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -72,9 +72,9 @@ Test Steps:
 Expected Result:
 The login should be rejected, and an appropriate error message should be displayed.
 
-Actual Result: To be recorded during execution.
+Actual Result: Login was unsuccessful. An error message was displayed, and the user remained on the Login page. The Products page was not opened.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -90,9 +90,8 @@ Test Steps:
 Expected Result:
 The user should remain on the login page, and a validation message should be displayed.
 
-Actual Result: To be recorded during execution.
-
-Status: Not Executed.
+Actual Result: Login was unsuccessful. The error message "Epic sadface: Username is required" was displayed. The username and password fields were highlighted in red with error icons, and the user remained on the Login page.
+Status: Pass
 
 ---
 
@@ -108,9 +107,9 @@ Test Steps:
 Expected Result:
 The login should be rejected, and a validation message should indicate that the password is required.
 
-Actual Result: To be recorded during execution.
+Actual Result: Login was unsuccessful. The error message "Epic sadface: Password is required" was displayed in a red error box. The password field was highlighted in red with an error icon, and the user remained on the Login page. The Products page was not opened.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -126,9 +125,9 @@ Test Steps:
 Expected Result:
 The user should not be allowed to log in, and an appropriate message should explain that the account is locked.
 
-Actual Result: To be recorded during execution.
+Actual Result: Login was unsuccessful. The error message "Epic sadface: Sorry, this user has been locked out." was displayed in a red error box. The user remained on the Login page and was not redirected to the Products page.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -144,9 +143,9 @@ Test Steps:
 Expected Result:
 The product list should be displayed with product information and available purchase controls.
 
-Actual Result: To be recorded during execution.
+Actual Result: The Products page was displayed successfully. Product names, prices, images, and Add to cart buttons were visible. The product content included the expressions "Test.allTheThings()" in a product name and "carry.allTheThings()" in a product description. 
 
-Status: Not Executed.
+Status: Fail
 
 ---
 
