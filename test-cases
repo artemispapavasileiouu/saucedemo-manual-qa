@@ -1,0 +1,402 @@
+Test Cases — SauceDemo
+
+1. Document Information
+Project: SauceDemo Manual QA Testing 
+Application: https://www.saucedemo.com/ 
+Document Type: Test Cases 
+Testing Type: Manual Functional Testing 
+Author: Artemis Papavasileiou 
+Status: Ready for Execution 
+
+2. Test Data
+The following publicly provided demo credentials will be used:
+
+|   User Type   |     Username     |   Password   |
+|---------------|------------------|--------------|
+| Standard User |  standard_user   | secret_sauce |
+| Locked User   |  locked_out_user | secret_sauce |
+| Invalid User  |  invalid_user    | secret_sauce |
+
+For checkout tests, use the following sample data when required:
+- First Name: Artemis
+- Last Name: QA
+- Postal Code: 50100
+
+3. Test Cases
+TC-001: Login with Valid Credentials
+Priority: High
+Preconditions: The user is on the login page
+
+Test Steps:
+1. Enter `standard_user` in the Username field.
+2. Enter `secret_sauce` in the Password field.
+3. Click the Login button.
+
+Expected Result:
+The user should be redirected to the Products page, and the product list should be displayed.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-002: Login with Invalid Username
+Priority: High
+Preconditions: The user is on the login page.
+
+Test Steps:
+1. Enter `invalid_user` in the Username field.
+2. Enter `secret_sauce` in the Password field.
+3. Click the Login button.
+
+Expected Result:
+The login should be rejected, and an appropriate error message should be displayed.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-003: Login with Invalid Password
+Priority: High
+Preconditions: The user is on the login page.
+
+Test Steps:
+1. Enter `standard_user` in the Username field.
+2. Enter an incorrect password.
+3. Click the Login button.
+
+Expected Result:
+The login should be rejected, and an appropriate error message should be displayed.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-004: Login with Empty Credentials
+Priority: High
+Preconditions: The user is on the login page.
+
+Test Steps:
+1. Leave the Username field empty.
+2. Leave the Password field empty.
+3. Click the Login button.
+
+Expected Result:
+The user should remain on the login page, and a validation message should be displayed.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-005: Login with Empty Password
+Priority: Medium
+Preconditions: The user is on the login page.
+
+Test Steps:
+1. Enter `standard_user` in the Username field.
+2. Leave the Password field empty.
+3. Click the Login button.
+
+Expected Result:
+The login should be rejected, and a validation message should indicate that the password is required.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-006: Login with Locked-Out User
+Priority: High
+Preconditions: The user is on the login page.
+
+Test Steps:
+1. Enter `locked_out_user` in the Username field.
+2. Enter `secret_sauce` in the Password field.
+3. Click the Login button.
+
+Expected Result:
+The user should not be allowed to log in, and an appropriate message should explain that the account is locked.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-007: Verify Products Page
+Priority: High
+Preconditions: The user has logged in successfully as `standard_user`.
+
+Test Steps:
+1. Observe the Products page.
+2. Verify that product names, prices, and images are displayed.
+3. Verify that an Add to Cart button is available for each product.
+
+Expected Result:
+The product list should be displayed with product information and available purchase controls.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-008: Sort Products by Name — A to Z
+Priority: Medium
+Preconditions: The user is on the Products page.
+
+Test Steps:
+1. Open the product sorting dropdown.
+2. Select Name (A to Z).
+3. Observe the order of the product names.
+
+Expected Result:
+Products should be displayed in alphabetical ascending order.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-009: Sort Products by Price — Low to High
+Priority: Medium
+Preconditions: The user is on the Products page.
+
+Test Steps:
+1. Open the product sorting dropdown.
+2. Select Price (low to high).
+3. Observe the displayed product prices.
+
+Expected Result:
+Products should be displayed in ascending order of price.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-010: Add a Product to the Cart
+Priority: High
+Preconditions: The user is logged in as `standard_user` and is on the Products page.
+
+Test Steps:
+1. Select Add to Cart for one product.
+2. Observe the shopping cart icon.
+3. Open the shopping cart.
+
+Expected Result:
+The selected product should appear in the cart, and the cart badge should reflect the number of items added.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-011: Remove a Product from the Cart
+Priority: Medium
+Preconditions: The user is logged in and has added a product to the cart.
+
+Test Steps:
+1. Open the shopping cart.
+2. Click Remove for the selected product.
+3. Observe the cart contents and cart badge.
+
+Expected Result:
+The selected product should be removed from the cart, and the cart badge should update accordingly.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-012: Verify Cart Contents
+Priority: High
+Preconditions: The user has added at least one product to the cart.
+
+Test Steps:
+1. Open the shopping cart.
+2. Verify the product name.
+3. Verify the product price.
+4. Verify the displayed quantity.
+
+Expected Result:
+The cart should display the selected product with the correct name, price, and quantity.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-013: Continue Shopping from the Cart
+Priority: Low
+Preconditions: The user is on the shopping cart page.
+
+Test Steps:
+1. Click Continue Shopping.
+2. Observe the resulting page.
+
+Expected Result:
+The user should return to the Products page.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-014: Proceed to Checkout
+Priority: High
+Preconditions: The user is logged in and has at least one product in the cart.
+
+Test Steps:
+1. Open the shopping cart.
+2. Click Checkout.
+
+Expected Result:
+The checkout information page should be displayed.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-015: Checkout with Valid Information
+Priority: High
+Preconditions: The user has at least one product in the cart and is on the checkout information page.
+
+Test Steps:
+1. Enter `Artemis` in the First Name field.
+2. Enter `QA` in the Last Name field.
+3. Enter `50100` in the Postal Code field.
+4. Click Continue.
+
+Expected Result:
+The user should proceed to the checkout overview page.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-016: Checkout with Empty First Name
+Priority: Medium
+Preconditions: The user is on the checkout information page.
+
+Test Steps:
+1. Leave the First Name field empty.
+2. Enter `QA` in the Last Name field.
+3. Enter `50100` in the Postal Code field.
+4. Click Continue.
+
+Expected Result:
+The user should remain on the checkout information page, and a validation message should indicate that the first name is required.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-017: Checkout with Empty Last Name
+Priority: Medium
+Preconditions: The user is on the checkout information page.
+
+Test Steps:
+1. Enter `Artemis` in the First Name field.
+2. Leave the Last Name field empty.
+3. Enter `50100` in the Postal Code field.
+4. Click Continue.
+
+Expected Result:
+The user should remain on the checkout information page, and a validation message should indicate that the last name is required.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-018: Verify Checkout Overview
+Priority: High
+Preconditions: The user has completed the checkout information form with valid data.
+
+Test Steps:
+1. Review the items displayed on the checkout overview page.
+2. Verify the product name and price.
+3. Review the item total, tax, and total amount, where displayed.
+
+Expected Result:
+The checkout overview should display the selected items and calculate the total consistently with the displayed prices and applicable tax.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-019: Complete an Order
+Priority: High
+Preconditions: The user is on the checkout overview page and the cart contains at least one product.
+
+Test Steps:
+1. Review the order information.
+2. Click Finish.
+3. Observe the confirmation page.
+
+Expected Result:
+The order should be completed in the demo application, and an order confirmation message should be displayed.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+---
+
+TC-020: Verify Order Confirmation
+Priority: High
+Preconditions: The user has completed the order successfully.
+
+Test Steps:
+1. Observe the confirmation page.
+2. Verify the confirmation message.
+3. Verify that a Back Home button is available.
+
+Expected Result:
+The confirmation page should communicate successful completion and provide a way to return to the Products page.
+
+Actual Result: To be recorded during execution.
+
+Status: Not Executed.
+
+4. Execution Results
+
+The actual results and statuses will be updated after each test case is executed.
+
+|   Status   |   Meaning   |
+|---|---|
+| Not Executed | The test has not yet been performed. |
+| Pass | Actual behavior matches the expected result. |
+| Fail | Actual behavior does not match the expected result. |
+| Blocked | The test cannot be completed due to an issue or dependency. |
+
+5. Notes
+
+- Test cases must be executed against the live demo application.
+- Actual results must reflect observed behavior.
+- Defects must be documented separately in the Bug Reports document.
+- Any changes to the test scope should be recorded in the Test Plan.
