@@ -161,9 +161,9 @@ Test Steps:
 Expected Result:
 Products should be displayed in alphabetical ascending order.
 
-Actual Result: To be recorded during execution.
+Actual Result: The products were displayed in alphabetical ascending order by product name after selecting "Name (A to Z)" from the sorting dropdown.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -179,9 +179,9 @@ Test Steps:
 Expected Result:
 Products should be displayed in ascending order of price.
 
-Actual Result: To be recorded during execution.
+Actual Result: The products were displayed in ascending order of price after selecting "Price (low to high)" from the sorting dropdown.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -197,9 +197,9 @@ Test Steps:
 Expected Result:
 The selected product should appear in the cart, and the cart badge should reflect the number of items added.
 
-Actual Result: To be recorded during execution.
+Actual Result: The selected product was successfully added to the cart. The "Add to cart" button changed to "Remove", the cart badge displayed "1", and the selected product appeared in the shopping cart.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
