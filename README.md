@@ -32,11 +32,11 @@ The following areas were tested:
 
 Test Deliverables
 
-| Deliverable                                 | Description                                                       |
-|---------------------------------------------|-------------------------------------------------------------------|
-| [Test Plan](saucedemo-manual-qa/test-plan.md)         | Testing scope, objectives, approach, and limitations              |
-| [Test Cases](saucedemo-manual-qa/test-cases.md)      | 22 manual functional test cases with execution results            |
-| [Bug Reports](saucedemo-manual-qa/bug-reports.md)   | Documentation of two observations requiring further investigation |
+| Deliverable | Description                                                       |
+|-------------|-------------------------------------------------------------------|
+| Test Plan   | Testing scope, objectives, approach, and limitations              |
+| Test Cases  | 22 manual functional test cases with execution results            |
+| Bug Reports | Documentation of two observations requiring further investigation |
 
 Test Execution Summary
 
