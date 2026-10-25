@@ -18,9 +18,9 @@ The following publicly provided demo credentials will be used:
 | Invalid User  |  invalid_user    | secret_sauce |
 
 For checkout tests, use the following sample data when required:
-- First Name: Artemis
-- Last Name: QA
-- Postal Code: 50100
+- First Name: Customer
+- Last Name: Tester
+- Postal Code: 10100
 
 3. Test Cases
 
@@ -419,14 +419,17 @@ Status: Pass
 
 4. Execution Results
 
-The actual results and statuses will be updated after each test case is executed.
+A total of 22 test cases were executed.
 
-|   Status     |   Meaning                                                   |
-|--------------|-------------------------------------------------------------|
-| Not Executed | The test has not yet been performed                         |
-| Pass         | Actual behavior matches the expected result                 |
-| Fail         | Actual behavior does not match the expected result          |
-| Blocked      | The test cannot be completed due to an issue or dependency  |
+| Status       |   Count   |
+|--------------|-----------|
+| Pass         | 21        |
+| Fail         | 1         |
+| Blocked      | 0         |
+| Not Executed | 0         |
+| Total        | 22        |
+
+The failed test case, TC-007, is documented for further investigation in the Bug Reports document.
 
 5. Notes
 
