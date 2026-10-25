@@ -23,6 +23,7 @@ For checkout tests, use the following sample data when required:
 - Postal Code: 50100
 
 3. Test Cases
+
 TC-001: Login with Valid Credentials
 Priority: High
 Preconditions: The user is on the login page
@@ -35,9 +36,9 @@ Test Steps:
 Expected Result:
 The user should be redirected to the Products page, and the product list should be displayed.
 
-Actual Result: To be recorded during execution.
+Actual Result: Login was successful. The user was redirected to the Products page, and the product list was displayed.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
