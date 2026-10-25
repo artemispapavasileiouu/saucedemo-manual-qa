@@ -215,9 +215,9 @@ Test Steps:
 Expected Result:
 The selected product should be removed from the cart, and the cart badge should update accordingly.
 
-Actual Result: To be recorded during execution.
+Actual Result: The product was successfully removed from the shopping cart. The cart badge was updated correctly.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -234,9 +234,9 @@ Test Steps:
 Expected Result:
 The cart should display the selected product with the correct name, price, and quantity.
 
-Actual Result: To be recorded during execution.
+Actual Result: The cart displayed the correct product name, price, and quantity (1) for the selected product.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -251,9 +251,9 @@ Test Steps:
 Expected Result:
 The user should return to the Products page.
 
-Actual Result: To be recorded during execution.
+Actual Result: Clicking "Continue Shopping" redirected the user to the Products page. The cart contents were preserved.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -268,9 +268,9 @@ Test Steps:
 Expected Result:
 The checkout information page should be displayed.
 
-Actual Result: To be recorded during execution.
+Actual Result: he product was successfully removed from the cart from the Products page. The button changed back to "Add to cart", and the cart badge was updated correctly.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -279,17 +279,17 @@ Priority: High
 Preconditions: The user has at least one product in the cart and is on the checkout information page.
 
 Test Steps:
-1. Enter `Artemis` in the First Name field.
-2. Enter `QA` in the Last Name field.
-3. Enter `50100` in the Postal Code field.
+1. Enter `Customer` in the First Name field.
+2. Enter `Tester` in the Last Name field.
+3. Enter `10100` in the Postal Code field.
 4. Click Continue.
 
 Expected Result:
 The user should proceed to the checkout overview page.
 
-Actual Result: To be recorded during execution.
+Actual Result: The user entered valid checkout information and successfully completed the checkout process. The order confirmation page was displayed.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -299,16 +299,16 @@ Preconditions: The user is on the checkout information page.
 
 Test Steps:
 1. Leave the First Name field empty.
-2. Enter `QA` in the Last Name field.
-3. Enter `50100` in the Postal Code field.
+2. Enter `Tester` in the Last Name field.
+3. Enter `10100` in the Postal Code field.
 4. Click Continue.
 
 Expected Result:
 The user should remain on the checkout information page, and a validation message should indicate that the first name is required.
 
-Actual Result: To be recorded during execution.
+Actual Result: The user remained on the checkout information page. The system displayed the validation message "Error: First Name is required" and did not proceed to the next checkout step.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
@@ -317,22 +317,39 @@ Priority: Medium
 Preconditions: The user is on the checkout information page.
 
 Test Steps:
-1. Enter `Artemis` in the First Name field.
+1. Enter `Customer` in the First Name field.
 2. Leave the Last Name field empty.
-3. Enter `50100` in the Postal Code field.
+3. Enter `10100` in the Postal Code field.
 4. Click Continue.
 
 Expected Result:
 The user should remain on the checkout information page, and a validation message should indicate that the last name is required.
 
-Actual Result: To be recorded during execution.
+Actual Result: The user remained on the checkout information page. The system displayed the validation message "Error: Last Name is required" and did not proceed to the next checkout step.
 
-Status: Not Executed.
+Status: Pass
 
 ---
 
-TC-018: Verify Checkout Overview
-Priority: High
+TC-018: Checkout with Empty Postal Code
+Priority: Medium
+Preconditions: The user is on the checkout information page.
+
+Test Steps:
+1. Enter `Customer` in the First Name field.
+2. Enter `Tester` in the Last Name field.
+3. Leave the Postal Code field empty.
+4. Click Continue.
+
+Expected Result:
+The user should remain on the checkout information page, and a validation message should indicate that the last name is required.
+
+Actual Result: The user remained on the checkout information page. The system displayed the validation message "Error: Postal Coed is required" and did not proceed to the next checkout step.
+
+Status: Pass
+
+TC-020: Checkout Overview
+Priority: Medium
 Preconditions: The user has completed the checkout information form with valid data.
 
 Test Steps:
@@ -349,7 +366,7 @@ Status: Not Executed.
 
 ---
 
-TC-019: Complete an Order
+TC-021: Complete an Order
 Priority: High
 Preconditions: The user is on the checkout overview page and the cart contains at least one product.
 
@@ -367,7 +384,7 @@ Status: Not Executed.
 
 ---
 
-TC-020: Verify Order Confirmation
+TC-022: Verify Order Confirmation
 Priority: High
 Preconditions: The user has completed the order successfully.
 
